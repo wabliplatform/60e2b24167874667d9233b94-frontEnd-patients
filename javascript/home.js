@@ -1,4 +1,120 @@
-let apiPatientApi = new TempApi.PatientApi();import TempApi from '../src/index';window.onload = () => {apiPatientApi.getAllpatient((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements =[...document.getElementById("ivs66").querySelectorAll( "[dataitem='true']" )].filter(
+let apiPatientApi = new TempApi.PatientApi();import TempApi from '../src/index';document.getElementById('iyi5m').onclick = (event) => {
+    event.preventDefault();
+    {   location.href= '/create' ;}};document.getElementById('igbp7').onclick = (event) => {
+    event.preventDefault();
+    {  
+      let transitionId = window.location.href.split('/').at(-1);
+      let parentId = "";
+      const storedData = window.localStorage.getItem("data");
+      const newMap = new Map(JSON.parse(storedData));
+      newMap.forEach((value, key) => {
+        if (
+          document.getElementById(key) !== null &&
+          document
+            .getElementById(key)
+            .contains(document.getElementById("igbp7")) === true &&
+            document.getElementById(key).contains(document.getElementById(parentId)) === false
+        ) {
+          transitionId = value._id;
+          parentId = key;
+        }
+      });
+     location.href= '/manage/' + transitionId;}};document.getElementById('igvp2').onclick = (event) => {
+    event.preventDefault();
+    let patientId = window.location.pathname.replace('/home/','');
+      if(patientId === '/home' || patientId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("igvp2")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            patientId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{   location.href= '/home' ;}}});};document.getElementById('iv33g').onclick = (event) => {
+    event.preventDefault();
+    let patientId = window.location.pathname.replace('/home/','');
+      if(patientId === '/home' || patientId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("iv33g")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            patientId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('ihfj1y').onclick = (event) => {
+    event.preventDefault();
+    let patientId = window.location.pathname.replace('/home/','');
+      if(patientId === '/home' || patientId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("ihfj1y")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            patientId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('igbkri').onclick = (event) => {
+    event.preventDefault();
+    let patientId = window.location.pathname.replace('/home/','');
+      if(patientId === '/home' || patientId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("igbkri")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            patientId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('ieh6hq').onclick = (event) => {
+    event.preventDefault();
+    let patientId = window.location.pathname.replace('/home/','');
+      if(patientId === '/home' || patientId === ''){
+        let parentId = "";
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach((value, key) => {
+          if (
+            document
+              .getElementById(key)
+              .contains(document.getElementById("ieh6hq")) === true &&
+              document.getElementById(key).contains(document.getElementById(parentId)) === false
+          ) {
+            patientId = value._id;
+            parentId = key;
+          }
+        });
+      }
+    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};window.onload = () => {apiPatientApi.getAllpatient((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements =[...document.getElementById("ivs66").querySelectorAll( "[dataitem='true']" )].filter(
     (element, index, array) =>
     !array.reduce((hasAncestorFlag, dataItem) => hasAncestorFlag || (element.compareDocumentPosition(dataItem) & Node.DOCUMENT_POSITION_CONTAINS) === 8, false)
   );const map = new Map();  data.forEach((item,i) => {
