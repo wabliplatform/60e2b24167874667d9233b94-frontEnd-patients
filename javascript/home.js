@@ -38,7 +38,26 @@ let apiPatientApi = new TempApi.PatientApi();import TempApi from '../src/index';
           }
         });
       }
-    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{   location.href= '/home' ;}}});};document.getElementById('iv33g').onclick = (event) => {
+    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{   location.href= '/home' ;}}});};document.getElementById('i00z9').onclick = (event) => {
+    event.preventDefault();
+    {  
+      let transitionId = window.location.href.split('/').at(-1);
+      let parentId = "";
+      const storedData = window.localStorage.getItem("data");
+      const newMap = new Map(JSON.parse(storedData));
+      newMap.forEach((value, key) => {
+        if (
+          document.getElementById(key) !== null &&
+          document
+            .getElementById(key)
+            .contains(document.getElementById("i00z9")) === true &&
+            document.getElementById(key).contains(document.getElementById(parentId)) === false
+        ) {
+          transitionId = value._id;
+          parentId = key;
+        }
+      });
+     location.href= '/manage/' + transitionId;}};document.getElementById('iv33g').onclick = (event) => {
     event.preventDefault();
     let patientId = window.location.pathname.replace('/home/','');
       if(patientId === '/home' || patientId === ''){
@@ -57,7 +76,26 @@ let apiPatientApi = new TempApi.PatientApi();import TempApi from '../src/index';
           }
         });
       }
-    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('ihfj1y').onclick = (event) => {
+    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('ixwgvj').onclick = (event) => {
+    event.preventDefault();
+    {  
+      let transitionId = window.location.href.split('/').at(-1);
+      let parentId = "";
+      const storedData = window.localStorage.getItem("data");
+      const newMap = new Map(JSON.parse(storedData));
+      newMap.forEach((value, key) => {
+        if (
+          document.getElementById(key) !== null &&
+          document
+            .getElementById(key)
+            .contains(document.getElementById("ixwgvj")) === true &&
+            document.getElementById(key).contains(document.getElementById(parentId)) === false
+        ) {
+          transitionId = value._id;
+          parentId = key;
+        }
+      });
+     location.href= '/manage/' + transitionId;}};document.getElementById('ihfj1y').onclick = (event) => {
     event.preventDefault();
     let patientId = window.location.pathname.replace('/home/','');
       if(patientId === '/home' || patientId === ''){
@@ -76,7 +114,26 @@ let apiPatientApi = new TempApi.PatientApi();import TempApi from '../src/index';
           }
         });
       }
-    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('igbkri').onclick = (event) => {
+    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('i745rm').onclick = (event) => {
+    event.preventDefault();
+    {  
+      let transitionId = window.location.href.split('/').at(-1);
+      let parentId = "";
+      const storedData = window.localStorage.getItem("data");
+      const newMap = new Map(JSON.parse(storedData));
+      newMap.forEach((value, key) => {
+        if (
+          document.getElementById(key) !== null &&
+          document
+            .getElementById(key)
+            .contains(document.getElementById("i745rm")) === true &&
+            document.getElementById(key).contains(document.getElementById(parentId)) === false
+        ) {
+          transitionId = value._id;
+          parentId = key;
+        }
+      });
+     location.href= '/manage/' + transitionId;}};document.getElementById('igbkri').onclick = (event) => {
     event.preventDefault();
     let patientId = window.location.pathname.replace('/home/','');
       if(patientId === '/home' || patientId === ''){
@@ -95,7 +152,26 @@ let apiPatientApi = new TempApi.PatientApi();import TempApi from '../src/index';
           }
         });
       }
-    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('ieh6hq').onclick = (event) => {
+    apiPatientApi.deletepatient( patientId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');}});};document.getElementById('i7voqc').onclick = (event) => {
+    event.preventDefault();
+    {  
+      let transitionId = window.location.href.split('/').at(-1);
+      let parentId = "";
+      const storedData = window.localStorage.getItem("data");
+      const newMap = new Map(JSON.parse(storedData));
+      newMap.forEach((value, key) => {
+        if (
+          document.getElementById(key) !== null &&
+          document
+            .getElementById(key)
+            .contains(document.getElementById("i7voqc")) === true &&
+            document.getElementById(key).contains(document.getElementById(parentId)) === false
+        ) {
+          transitionId = value._id;
+          parentId = key;
+        }
+      });
+     location.href= '/manage/' + transitionId;}};document.getElementById('ieh6hq').onclick = (event) => {
     event.preventDefault();
     let patientId = window.location.pathname.replace('/home/','');
       if(patientId === '/home' || patientId === ''){
